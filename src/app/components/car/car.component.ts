@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Car } from 'src/app/models/car';
+//import { Car } from 'src/app/models/car';
 import { CarDetailDto } from 'src/app/models/carDetailDto';
-import { CarService } from 'src/app/services/car.service';
+//import { CarService } from 'src/app/services/car.service';
 
 @Component({
   selector: 'app-car',
@@ -14,12 +14,17 @@ export class CarComponent implements OnInit {
   carDetails:CarDetailDto[] = []
   dataLoaded = false;
   
-  constructor(private carService:CarService) { }
+  //constructor(private carService:CarService) { }
+  constructor() { }
 
   ngOnInit(): void {
     this.getCars();
   }
 
+  getCars(){
+    
+  }
+  /*
   getCars(){
     this.carService.getCars().subscribe(response => {
       this.carDetails=response.data
@@ -27,6 +32,7 @@ export class CarComponent implements OnInit {
     })
     
   }
+  */
 
 
 }
