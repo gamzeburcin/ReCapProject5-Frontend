@@ -13,7 +13,7 @@ describe('BrandComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
+  beforeEach(() => { 
     fixture = TestBed.createComponent(BrandComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
